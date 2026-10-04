@@ -67,6 +67,7 @@ Deferred (2026-08 review):
 - `:conflicts` (git merge-conflict scan)
 - Structural summaries (depends on the Rust native `@oh-my-pi/pi-natives`)
 
-Extension point: `sourceHandlers` in `read-selector.ts` is a handler registry.
-URL, archive, SQLite or PDF sources should plug in as handlers of this same
-`read` tool, not as separate tools.
+Design intent: URL, archive, SQLite or PDF sources should be added as source
+handlers inside this same `read` tool, not as separate tools. The registry is
+not implemented yet (the header comment in `read-selector.ts` describes the
+planned seam).
