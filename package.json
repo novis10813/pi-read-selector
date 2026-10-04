@@ -1,0 +1,13 @@
+{
+	"name": "pi-read-selector",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"description": "pi extension: overrides the built-in read tool with path-embedded line-range selectors (:50-100, :5-16,960-973, :raw) and a binary-file guard",
+	"scripts": {
+		"test": "node read-selector.test.mjs"
+	},
+	"pi": {
+		"extensions": ["./read-selector.ts"]
+	}
+}
